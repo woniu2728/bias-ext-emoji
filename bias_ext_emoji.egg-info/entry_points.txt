@@ -1,0 +1,2 @@
+[bias.extensions]
+emoji = bias_ext_emoji.backend.ext:extend

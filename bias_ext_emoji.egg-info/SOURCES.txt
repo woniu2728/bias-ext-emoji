@@ -1,0 +1,10 @@
+pyproject.toml
+bias_ext_emoji.egg-info/PKG-INFO
+bias_ext_emoji.egg-info/SOURCES.txt
+bias_ext_emoji.egg-info/dependency_links.txt
+bias_ext_emoji.egg-info/entry_points.txt
+bias_ext_emoji.egg-info/requires.txt
+bias_ext_emoji.egg-info/top_level.txt
+bias_ext_emoji/backend/__init__.py
+bias_ext_emoji/backend/ext.py
+bias_ext_emoji/backend/tests.py
