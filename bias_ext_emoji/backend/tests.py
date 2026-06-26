@@ -63,8 +63,8 @@ class EmojiExtensionTests(TestCase):
         self.assertEqual(response.status_code, 200, response.content)
         self.assertIn("🙂", response.json()["html"])
 
-    @patch("apps.core.extensions.lifecycle.invalidate_extension_frontend_assets")
-    @patch("apps.core.extensions.frontend_runtime_service.clear_extension_frontend_runtime_cache")
+    @patch("bias_core.extensions.lifecycle.invalidate_extension_frontend_assets")
+    @patch("bias_core.extensions.frontend_runtime_service.clear_extension_frontend_runtime_cache")
     def test_extension_settings_default_reset_and_frontend_cache_invalidation(
         self,
         clear_frontend_runtime_cache,
@@ -99,4 +99,5 @@ class EmojiExtensionTests(TestCase):
             "extension_settings_changed",
             extension_id="emoji",
         )
+
 

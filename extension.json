@@ -1,1 +1,30 @@
-{"id":"emoji","name":"emoji","version":"0.1.0","category":"feature","authors":["Bias"],"dependencies":["core"],"django":{"app_config":"bias_ext_emoji.backend.apps.EmojiExtensionConfig","app_label":"emoji","migration_module":"bias_ext_emoji.backend.django_migrations"},"backend":{"entry":"bias_ext_emoji.backend.ext:extend"}}
+{
+  "id": "emoji",
+  "version": "0.1.0",
+  "category": "feature",
+  "authors": [
+    "Bias"
+  ],
+  "dependencies": [
+    "core"
+  ],
+  "django": {
+    "app_config": "bias_ext_emoji.backend.apps.EmojiExtensionConfig",
+    "app_label": "emoji",
+    "migration_module": "bias_ext_emoji.backend.django_migrations"
+  },
+  "backend": {
+    "entry": "bias_ext_emoji.backend.ext:extend"
+  },
+  "extra": {
+    "auto_install": true,
+    "auto_enable": true
+  },
+  "name": "Emoji",
+  "description": "为编辑器提供表情按钮、:emoji 自动补全，并对帖子与通知内容进行 Twemoji 渲染。",
+  "icon": "far fa-face-smile",
+  "provides": [
+    "emoji-composer",
+    "emoji-renderer"
+  ]
+}
