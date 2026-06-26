@@ -4,6 +4,14 @@ version = "0.1.0"
 dependencies = ["bias-core>=0.1,<0.2"]
 [project.entry-points."bias.extensions"]
 emoji = "bias_ext_emoji.backend.ext:extend"
+[tool.setuptools]
+include-package-data = true
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["bias_ext_emoji*"]
+
+[tool.setuptools.data-files]
+"bias_extensions/emoji" = ["extension.json"]
+"bias_extensions/emoji/frontend/forum" = ["frontend/forum/ComposerEmojiAutocomplete.vue", "frontend/forum/ComposerEmojiPicker.vue", "frontend/forum/emojiData.js", "frontend/forum/index.js", "frontend/forum/nodeSdk.js", "frontend/forum/sdk.d.ts", "frontend/forum/sdk.js", "frontend/forum/twemoji.js"]
+
