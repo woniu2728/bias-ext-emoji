@@ -26,5 +26,8 @@
   "provides": [
     "emoji-composer",
     "emoji-renderer"
-  ]
+  ],
+  "security": {
+    "capabilities_notice": "Composer rendering extension; injects editor UI and transforms rendered content with emoji assets."
+  }
 }
