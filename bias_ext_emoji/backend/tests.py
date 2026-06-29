@@ -3,13 +3,14 @@ from unittest.mock import patch
 
 from django.test import TestCase
 
-from bias_core.extension_settings_service import get_extension_settings, save_extension_settings
-from bias_core.extensions.settings_runtime_service import (
+from bias_core.extensions.testing import (
+    Setting,
+    clear_runtime_setting_caches,
     get_enabled_extension_settings_definitions,
+    get_extension_settings,
     get_extension_settings_definition,
+    save_extension_settings,
 )
-from bias_core.models import Setting
-from bias_core.settings_service import clear_runtime_setting_caches
 
 
 class EmojiExtensionTests(TestCase):

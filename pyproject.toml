@@ -14,4 +14,5 @@ include = ["bias_ext_emoji*"]
 [tool.setuptools.data-files]
 "bias_extensions/emoji" = ["extension.json"]
 "bias_extensions/emoji/frontend/forum" = ["frontend/forum/ComposerEmojiAutocomplete.vue", "frontend/forum/ComposerEmojiPicker.vue", "frontend/forum/emojiData.js", "frontend/forum/index.js", "frontend/forum/nodeSdk.js", "frontend/forum/sdk.d.ts", "frontend/forum/sdk.js", "frontend/forum/twemoji.js"]
+"bias_extensions/emoji/locale" = ["locale/zh-CN.json"]
 
